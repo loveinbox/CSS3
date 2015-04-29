@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<div class="aside">
+				<div class="show-code">background-clip:border/padding
+					background-origin:border/padding/content
+					background-size:40px 20px;/50% 50%				
+				</div>
+			</div>
+			<article>
+				<p>-moz-background-clip:border</p>
+				<div style="width:200px;height:50px;background:#00CCFF;padding:20px;border:10px dashed red;-moz-background-clip:border;">
+					背景色延伸至border
+				</div>
+				<p>-moz-background-clip:padding</p>
+				<div style="width:200px;height:50px;background:#00CCFF;padding:20px;border:10px dashed red;-moz-background-clip:padding;">
+					背景色延伸至padding<br>（FF暂时无效）
+				</div>
+				<hr>
+				<p>background-origin:border</p>
+				<div id="aa" style="width:200px;height:50px;background-image:url('../../imgs/4.png');background-repeat:no-repeat;padding:20px;border:10px dashed red;-moz-background-origin:border;-webkit-background-origin:border;">
+					背景色延伸至border
+				</div>
+				<p>background-origin:padding</p>
+				<div id="aa" style="width:200px;height:50px;background-image:url('../../imgs/4.png');background-repeat:no-repeat;padding:20px;border:10px dashed red;-moz-background-origin:padding;-webkit-background-origin:padding;">
+					背景色延伸至border
+				</div>
+				<p>background-origin:content</p>
+				<div id="aa" style="width:200px;height:50px;background-image:url('../../imgs/4.png');background-repeat:no-repeat;padding:20px;border:10px dashed red;-moz-background-origin:content;-webkit-background-origin:content;">
+					背景色延伸至border
+				</div>
+				<p class="conclude">FF无效，webkit有效</p>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

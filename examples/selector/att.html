@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">
+		p{
+			width: 50%;
+		}
+		div{
+			width: 200px;
+			height: 50px;
+		}
+		div[class="color-red"]{
+			background-color: red;
+		}
+		div[class*="color"]{
+			color: yellow;
+		}
+		div[class^="col"]{
+			border: 1px solid black;
+		}
+		div[class$="green"]{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<div class="aside">
+				<div class="show-code">
+				div{
+					width: 200px;height: 50px;
+				}
+				div[class="color-red"]{
+					background-color: red;
+				}
+				div[class*="color"]{
+					color: yellow;
+				}
+				div[class^="col"]{
+					border: 1px solid black;
+				}
+				div[class$="green"]{
+					background-color: green;
+				}
+				</div>
+			</div>
+			<article>
+				<div class="color-red">
+					class="color-red"
+				</div>
+				<div class="color-green">
+					class="color-green"
+				</div>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

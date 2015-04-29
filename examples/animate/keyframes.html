@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">
+		@-webkit-keyframes mycolor{
+			0%{
+				background:red;
+				width: 100px;
+				height: 50px;
+				margin: 0;
+			}
+			50%{
+				background:yellow;
+				width: 200px;
+				height: 80px;
+				margin-left: 50px;
+			}
+		}
+		@-moz-keyframes mycolor{
+			0%{
+				background:red;
+				width: 100px;
+				height: 50px;
+				margin: 0;
+			}
+			50%{
+				background:yellow;
+				width: 200px;
+				height: 80px;
+				margin-left: 50px;
+			}
+		}
+		div.animation{
+			width: 100px;
+			height: 50px;
+			margin: 0;
+			-moz-animation:mycolor 5s linear;
+			-moz-animation-iteration-count: infinite;
+			-moz-animation-direction: alternate;
+			-moz-animation-play-state: running;
+			-webkit-animation:mycolor 5s linear;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-play-state: running;
+		}
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<div class="aside">
+				<div class="show-code">@-moz-keyframes mycolor{
+					0%{
+						background:red;
+						width: 100px;
+						height: 50px;
+						margin: 0;
+					}
+					50%{
+						background:yellow;
+						width: 200px;
+						height: 80px;
+						margin-left: 50px;
+					}
+				}
+				div.animation{
+					width: 100px;
+					height: 50px;
+					margin: 0;
+					-moz-animation:mycolor 5s linear;
+					-moz-animation-iteration-count: infinite;
+					-moz-animation-direction: alternate;
+					-moz-animation-play-state: running;
+					-webkit-animation:mycolor 5s linear;
+					-webkit-animation-iteration-count: infinite;
+					-webkit-animation-direction: alternate;
+					-webkit-animation-play-state: running;
+				}				
+				</div>
+			</div>
+			<article>
+				<div class="animation">
+					变色
+				</div>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

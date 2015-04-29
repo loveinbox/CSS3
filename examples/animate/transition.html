@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<style type="text/css">
+			.transHeight{
+				width:100px;
+				height:50px;
+				transition: height 1s ease;
+			}
+			.transHeight:hover{
+				height:200px;
+			}
+			.transWidth{
+				width:100px;
+				height:50px;
+				transition: width 1s ease-out;
+			}
+			.transWidth:hover{
+				width:300px;
+			}
+		</style>
+		<section>
+			<div class="aside">
+				<div class="show-code">
+					transition: property duration timing-function delay;
+				</div>
+			</div>
+			<article>
+				<div class="transHeight">鼠标悬浮变高</div>
+				<hr>
+				<div class="transWidth">鼠标悬浮变长</div>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

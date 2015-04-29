@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">
+		div{
+			overflow: hidden;
+		}
+		div.yes:not(.not){
+			background: pink;
+		}
+	 	div:empty{
+	 		background: red;
+	 	}
+		div:target{
+			background: yellow;
+		} 
+
+
+		ul.test-selector li:first-child{
+			background:red;
+		}
+		ul.test-selector li:last-child{
+			background:yellow;
+		}
+		ul.test-selector li:nth-child(2n+1){
+			color:blue;
+		}
+		ul.test-selector li:nth-child(even){
+			color:green;
+		}
+		ul.test-selector li:nth-last-child(2){
+			color:pink;
+		}
+		ul.test-selector div:nth-of-type(2){
+			background:pink;
+		}
+		ul.test-selector div:nth-child(2){
+			background:yellow;
+		}
+		ul li:only-child{
+			color:black;
+			background:blue;
+		}
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<div class="aside">
+				<div class="show-code">
+				div.yes:not(.not){
+					background: pink;
+				}
+			 	div:empty{
+			 		background: red;
+			 	}
+				div:target{
+					background: yellow;
+				} 
+				</div>
+			</div>
+			<article>
+				<div class="yes">
+					class="yes"
+				</div>
+				<div class="yes">
+					class="yes"
+				</div>
+				<div class="not">
+					class="not"
+				</div>
+				<span>下面是一个空的div</span>	
+				<div style="width:100px;height:50px;"></div>
+				<a href="#text1">text1</a>
+				<a href="#text2">text2</a>
+			</article>
+		</section>
+		<section>
+			<div class="aside">
+				<pre>
+				ul.test-selector li:first-child{
+					background:red;
+				}
+				ul.test-selector li:last-child{
+					background:yellow;
+				}
+				ul.test-selector li:nth-child(2n+1){
+					color:blue;
+				}
+				ul.test-selector li:nth-child(even){
+					color:green;
+				}
+				ul.test-selector li:nth-last-child(2){
+					color:pink;
+				}
+				ul.test-selector div:nth-of-type(2){
+					background:pink;
+				}
+				ul.test-selector div:nth-child(2){
+					background:yellow;
+				}
+				ul li:only-child{
+					color:black;
+					background:blue;
+				}
+				</pre>
+			</div>
+			<article>
+				<ul class="test-selector">
+					<li>第一个</li>					
+					<div>第一个div</div>
+					<li class="type">第二个li，第一个li.type//不区分class 故还是选择了第二个li</li>
+					<li>第三个</li>
+					<li>第四个</li>
+					<li class="type">第五个，第二个li.type</li>
+					<li>第六个</li>
+					<li class="type">第七个，第三个li.type</li>
+					<li>第八个</li>
+					<div>第二个div</div>
+				</ul>
+				<P>div:nth-child(2)：若div父元素的第二个子元素是div，则应用样式</P>
+				<p>div:nth-of-type(2)：应用于div父元素下的第二个div上</p>				
+				<ul>
+					<li>only-child</li>
+				</ul>
+
+				<div id="text1">
+					text1
+				</div>
+				<div id="text2">
+					text2
+				</div>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

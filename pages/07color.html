@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href="../new.css">
+<base href="../examples/color/"/>
+<header><h2>颜色</h2></header>
+<hr>
+<section class="iframe-article">
+	<article>
+		<h3>渐变</h3>
+		<p class="show-code">线性渐变和径向渐变</p>
+		<p><a href="gradient.html" target="_blank">示例</a></p>
+	</article>
+	<article>
+		<h3>透明</h3>
+		<p class="show-code">文字和背景
+		background-color:rgba(255,255,255,0.5);
+		background-color:hsla(120,100%,50%,0.5); 色调，饱和度，亮度，透明度
+		整个元素
+		opacity:0.5;
+		ie filter:alpha(opacity=50);
+		</p>
+		<p><a href="opacity.html" target="_blank">示例</a></p>
+	</article>
+	<article>
+		<h3>边框</h3>
+		<p class="show-code">outline:thin solid red;
+		outline-offset:2px;
+		</p>
+		<div style="outline:thin solid red;outline-offset:2px;width:50px;margin:30px;background:#0099FF;">带边框的div</div>
+	</article>
+	<article>
+		<h3>改变大小</h3>
+		<p class="show-code">resize:vertical/horizontal/both;</p>
+		<div style="width:100px;height:100px;resize:both;border:1px solid black;background:pink;overflow: auto;">可以拖动改变大小</div>
+		<p class="conclude">必须联合使用resize:both;与overflow: auto;</p>
+	</article>
+</section>

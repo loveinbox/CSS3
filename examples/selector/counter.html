@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">
+		h1:before{
+			content:counter(mycounter);
+		}
+		h1{
+			counter-increment:mycounter;
+			counter-reset:subcounter;
+		}
+		h2:before{
+			content:counter(subcounter);
+		}
+		h2{
+			counter-increment:subcounter;
+		}
+		h3:before{
+			content:open-quote;
+		}
+		h3:after{
+			content:close-quote;
+		}
+		h3{
+			quotes:"("")";
+		}
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<div class="aside">
+				<div class="show-code">
+					h1:before{
+						content:counter(mycounter);
+					}
+					h1{
+						counter-increment:mycounter;
+						counter-reset:subcounter;
+					}
+					h2:before{
+						content:counter(subcounter);
+					}
+					h2{
+						counter-increment:subcounter;
+					}
+					h1:before{
+						content:open-quoter;
+					}
+					h1:after{
+						content:close-quoter;
+					}
+					h1{
+						quoter:"("")";
+					}
+				</div>
+			</div>
+			<article>
+				<p>content:counter(subcounter);	counter-increment:subcounter;</p>
+				<h1>大标题一</h1>
+				<h2>小标题一</h2>
+				<h2>小标题二</h2>
+				<h1>大标题二</h1>
+				<h2>小标题一</h2>
+				<h2>小标题二</h2>
+				<p>自定义前后内容</p>
+				<h3>h3的标题</h3>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

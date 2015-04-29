@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<div class="aside">
+				<div class="show-code">
+				normal	默认。空白会被浏览器忽略。
+				pre	空白会被浏览器保留。其行为方式类似 HTML 中的 pre 标签。
+				nowrap	文本不会换行，文本会在在同一行上继续，直到遇到 br 标签为止。
+				pre-wrap	保留空白符序列，但是正常地进行换行。
+				pre-line	合并空白符序列，但是保留换行符。
+				</div>
+			</div>
+			<article>
+				<p>white-space:normal</p>
+				<div style="white-space:normal">文字中间    有4个空格。</div>
+				<p>white-space:pre</p>
+				<div style="white-space:pre">文字中间    有4个空格。</div>
+				<p>white-space:nowrap</p>
+				<div style="white-space:nowrap;width:200px;">这是一段很长很长
+					很长很很长很长很长很长很长很长很长很长长很长很长很长很长的文字。</div>
+				<p>white-space:pre-wrap</p>
+				<div style="white-space:pre-wrap">文字
+					中
+					间    有
+					4个空格
+					和4个换行。</div>
+				<p>white-space:pre-line</p>
+				<div style="white-space:pre-line">文字
+					中
+					间    有
+					4个空格
+					和4个换行。</div>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

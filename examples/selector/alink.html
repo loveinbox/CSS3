@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">	
+		a{
+			color: red;
+		}
+		a:linked{
+			color: yellow;
+		}
+		a:visited{
+			color: blue;
+		}
+		a:hover{
+			color: green;
+		}
+		a:active{
+			color: pink;
+		}
+		.test{
+			width: 400px;
+			height: 50px;
+		}
+		.test p:first-line{
+			color: blue;
+		}
+		.test p:first-letter{
+			font-size: 40px;
+		}
+		.test p:before{
+			content:"before";
+			color: black;
+		}
+		.test p:after{
+			content:"after";
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<div class="aside">
+				<div class="show-code">
+				a{
+					color: red;
+				}
+				a:linked{
+					color: yellow;
+				}
+				a:visited{
+					color: blue;
+				}
+				a:hover{
+					color: green;
+				}
+				a:active{
+					color: pink;
+				}
+				</div>
+			</div>
+			<article>
+				<a href="#">示例文字</a>
+			</article>
+		</section>
+		<section>
+			<div class="aside">
+				<pre>
+				div#test:first-line{
+					color: blue;
+				}
+				div#test:first-letter{
+					font-size: 40px;
+				}
+				div#test:before{
+					cotent:"before";
+					color: #ddd;
+				}
+				div#test:after{
+					cotent:"after";
+					color: #eee;
+				}
+				</pre>
+			</div>
+			<article class="test">
+				<p>
+					这是一段文字，<br>
+					这是第二行，<br>
+					这是第三行。<br>
+				<span style="color:red">注意：有了before，则第一个字母成了b。且first-line不包含before中的内容</span>
+				</p>					
+			</article>
+		</section>		
+	</section>	
+</body>
+</html>

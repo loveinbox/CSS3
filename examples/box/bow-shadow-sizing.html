@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<div class="aside">
+				<div class="show-code">
+					bow-shadow: length length radius color
+				</div>
+			</div>
+			<article>
+				<p>box-shadow:30px 3px 10px green;</p>
+				<div style="width:200px;height:50px;box-shadow:30px 3px 10px green;"> </div>
+				<p>box-shadow:-3px -30px 10px pink;</p>
+				<div style="width:200px;height:50px;box-shadow:-3px -30px 10px pink;"> </div>
+			</article>
+		</section>
+		<section>
+			<div class="aside">
+				<div class="show-code">
+					box-sizing:content-box/border-box/padding-box
+				</div>
+			</div>
+			<article>
+				<p>box-sizing:content-box</p>
+				<div style="width:300px;padding:20px;margin:20px;border:20px solid black;box-sizing:content-box;background-clip:content-box;">
+					contentWidth = 300
+				</div>
+				<p>box-sizing:padding-box</p>
+				<div style="width:300px;padding:20px;margin:20px;border:20px solid black;box-sizing:padding-box;background-clip:content-box;">
+					contentWidth+padding = 300
+				</div>
+				<p>box-sizing:border-box</p>
+				<div style="width:300px;padding:20px;margin:20px;border:20px solid black;box-sizing:border-box;background-clip:content-box;">
+					contentWidth+padding+border = 300
+				</div>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

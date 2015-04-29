@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+	<style type="text/css">
+		.box div{
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<section id="wrap"  style="height:100%;">
+		<section>
+			<div class="aside">
+				<div class="show-code">display:-moz-box
+				display:-webkit-box
+				-moz-box-orient:vertical/horizontal;
+				-webkit-box-oritent:vertical/horizontal;				
+				</div>
+			</div>
+			<article>
+				<p>vertical</p>
+				<div class="box" style="display:-moz-box;display:-webkit-box;-moz-box-orient:vertical;-webkit-box-oritent:vertical;">
+					<div>123</div><div>456</div><div>789</div>
+				</div><br>
+				<p>horizontal</p>
+				<div class="box" style="display:-moz-box;display:-webkit-box;-moz-box-orient:horizontal;-webkit-box-oritent:horizontal;">
+					<div>123</div><div>456</div><div>789</div>
+				</div>
+			</article>
+		</section>
+		<section>
+			<div class="aside">
+				<div class="show-code">-moz-box-ordinal-group:3;
+					-webkit-box-ordinal-group:3;				
+				</div>
+			</div>
+			<article>
+				<p>group</p>
+				<div class="box" style="display:-moz-box;display:-webkit-box;-moz-box-orient:vertical;-webkit-box-oritent:vertical;">
+					<div style="-moz-box-ordinal-group:3;-webkit-box-ordinal-group:3;">123 group:3</div>
+					<div style="-moz-box-ordinal-group:1;-webkit-box-ordinal-group:1;">456 group:1</div>
+					<div style="-moz-box-ordinal-group:2;-webkit-box-ordinal-group:2;">789 group:2</div>
+				</div><br>		
+			</article>
+		</section>
+		<section style="height:100%;">
+			<style type="text/css">
+				.centerContainer{
+					display:-moz-box;
+					display:-webkit-box;
+					-moz-box-align:center;
+					-webkit-box-align:center;
+					-moz-box-pack:center;
+					-webkit-box-pack:center;
+					width:100%;
+					height:100%;
+					opacity:0.5;
+				}
+			</style>
+			<div class="aside">
+				<div class="show-code">.centerContainer{
+				display:-moz-box;
+				display:-webkit-box;
+				-moz-box-align:center;
+				-webkit-box-align:center;
+				-moz-box-pack:center;
+				-webkit-box-pack:center;
+				width:100%;
+				height:100%;
+				}
+				</div>
+			</div>
+			<article style="height:100%;">
+				<div style="width:80%;height:220px;background:yellow;">
+					外层div width:80%;height:220px
+					<div class="centerContainer"><p>水平和垂直居中</p></div>
+				</div>
+				<p>以上使用了一个外层div，并将内层设为透明用来看清外层</p>
+				<p class="conclude">小结：Firefox浏览器中使用“height: 100%”会固定其高度，而不是自动延伸成100%的高度</p>
+				<p class="conclude">小结：对元素应用height:100%;时，需要有父元素高度height:xxxpx;</p>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

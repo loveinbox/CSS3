@@ -1,0 +1,34 @@
+body{
+	background: #ddd;
+}
+#wrap{
+	width: 80%;
+	margin: 0 auto;
+}
+#wrap section{
+	display: -moz-box;
+	width: 100%;
+	border: 1px solid black;
+}
+#wrap section div.aside{
+	width: 400px;
+	border-right: 1px solid black;
+	overflow: hidden;
+}
+#wrap section div pre{
+	margin-left: -240px;
+	padding: 0 20px;
+}
+#wrap section article{
+	-moz-box-flex:1;
+}
+p.conclude{
+	color: red;
+}	
+article div{
+	background: #0099FF;
+}
+.show-code{
+	white-space:pre-line;
+	margin: 20px;
+}

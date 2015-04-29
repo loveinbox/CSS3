@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<style type="text/css">		
+				input:hover{
+					background: blue;
+				}
+				input:focus{
+					background: yellow;
+				}
+				input:active{
+					background: red;
+				}
+			</style>
+			<div class="aside">
+				<div class="show-code">
+					input:hover{
+						background: blue;
+					}
+					input:active{
+						background: red;
+					}
+					input:focus{
+						background: yellow;
+					}
+				</div>
+			</div>
+			<article>
+				<p>E:hover E:active E:focus</p>
+				<input>
+				<p style="color:red">注意:active要放在focus之后，不然focus覆盖active</p>
+			</article>
+		</section>
+		<section>
+			<style type="text/css">		
+				input:enabled{
+					background: pink;
+				}
+				input:disabled{
+					background: red;
+				}
+				input:-moz-read-only{
+					color: blue;
+				}
+				input:-moz-read-write{
+					color: green;
+				}
+			</style>
+			<div class="aside">
+				<div class="show-code">
+					input:enabled{
+						background: pink;
+					}
+					input:disabled{
+						background: red;
+					}
+					input:-moz-read-only{
+						color: blue;
+					}
+					input:-moz-read-write{
+						color: green;
+					}
+				</div>
+			</div>
+			<article>
+				<p>E:enable/disable E:read-only/read-write</p>
+				<input enabled="enabled" placeholder="placeholder"><br>
+				<input disabled="true" placeholder="placeholder"><br>
+				<input readonly placeholder="placeholder"><br>
+				<input readwrite placeholder="placeholder">
+			</article>
+		</section>
+		<section>
+			<style type="text/css">	
+				input[type="checkbox"]:default{
+					outline: 2px solid blue;
+				}	
+				input[type="checkbox"]:checked{
+					outline: 2px solid red;
+				}
+				input[type="radio"]:indeterminate{
+					outline: 2px solid green;
+				}
+			</style>
+			<div class="aside">
+				<div class="show-code">
+					input[type="checkbox"]:default{
+						outline: 2px solid pink;
+					}	
+					input[type="checkbox"]:checked{
+						outline: 2px solid red;
+					}
+					input[type="radio"]:indeterminate{
+						outline: 2px solid blue;
+					}
+				</div>
+			</div>
+			<article>
+				<p>E:checked/default/indeterminate</p>
+				<input type="checkbox">足球</input>
+				<input type="checkbox" checked>篮球（默认选中项）</input>
+				<input type="checkbox">网球</input>
+				<input name="is" type="radio">是</input>
+				<input name="is" type="radio">否</input>
+				<p>仅opera支持input[type="radio"]:indeterminate</p>
+			</article>
+		</section>
+		<section>
+			<style type="text/css">	
+				p.sel::-moz-selection{
+					color:yellow;
+				}
+				input.val:valid{
+					background: pink;	
+				}
+				input.val:invalid{
+					background: red;
+				}
+				input.req:required{
+					background: blue;
+				}
+				input.req:optional{
+					color:yellow;
+					background: green;					
+				}
+			</style>
+			<div class="aside">
+				<div class="show-code">
+					p.sel::-moz-selection{
+						color:yellow;
+					}
+					input.val:valid{
+						background: pink;	
+					}
+					input.val:invalid{
+						background: red;
+					}
+					input.req:required{
+						background: blue;
+					}
+					input.req:optional{
+						background: green;
+					}
+				</div>
+			</div>
+			<article>
+			<p>E::selection E:valid/invalid E:required/optional</p>
+				<p class="sel">这是一段选择会变黄的文字</p>
+				<input class="val" required>这是一个必须输入的文本框，无输入为红，有输入为粉<br>
+				<input class="req" required>这是一个必须输入的文本框<br>
+				<input class="req">这不是一个必须输入的文本框
+			</article>
+		</section>
+		<section>
+			<style type="text/css">	
+				input.rang:in-range{
+					background: lightgreen;
+				}
+				input.rang:out-of-range{
+					background: red;
+				}
+			</style>
+			<div class="aside">
+				<div class="show-code">
+					input.rang:in-range{
+						background: lightgreen;
+					}
+					input.rang:in-range{
+						background: red;
+					}
+				</div>
+			</div>
+			<article>
+				<p>E:in-range/out-of-range</p>
+				<label>
+					范围是10到100
+					<input class="rang" type="number" max="100" min="10">
+				</label>
+				<P>只判断数字，无法判断时，则认为in-rang</P>
+			</article>
+		</section>
+		<section>
+			<style type="text/css">
+				div.test-silbing div{
+					width: 100px;
+					height: 20px;
+				}
+				.test-silbing-son+div{
+					background: red;
+				}
+				.test-silbing-son~p{
+					color:blue;
+				}
+			</style>
+			<div class="aside">
+				<div class="show-code">
+					input.rang:in-range{
+						background: lightgreen;
+					}
+					input.rang:in-range{
+						background: red;
+					}
+				</div>
+			</div>
+			<article>
+				<p>E+E E~E</p>
+				<div class="test-silbing-father">
+					<div>第一个div</div>
+					<div class="test-silbing-son">第二个div</div>
+					<div>第三个div</div>
+					<p>第一个p</p>
+					<p>第二个p</p>
+					<p>第三个p</p>
+					<div>第四个div<p>包含的p</p></div>
+				</div>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

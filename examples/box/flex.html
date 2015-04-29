@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../exampleBasic.css">
+</head>
+<body>
+	<section id="wrap">
+		<section>
+			<style type="text/css">
+				.box1{
+					display: -moz-box;
+					display: -webkit-box;
+					width: 300px;
+				}
+				.box1 #box1box1{
+					width: 100px;
+					background: red;
+				}
+				.box1 #box1box2{
+					-moz-box-flex:1;
+					-webkit-box-flex:1;
+					background: blue;
+				}
+				.box2{
+					display: -moz-box;
+					display: -webkit-box;
+					width: 80%;
+				}
+				.box2 #box2box1,.box3{
+					-moz-box-flex:1;					
+					-webkit-box-flex:1;
+					background: red;
+				}
+				.box2 #box2box2,.box4{
+					-moz-box-flex:1;
+					-webkit-box-flex:1;
+					background: blue;
+				}
+				div.hasWidth{
+					width: 200px;
+				}
+			</style>
+			<div class="aside">
+				<pre>
+				.box1{
+					display: -moz-box;
+					width: 300px;
+				}
+				.box1 #box1box1{
+					width: 100px;
+					background: red;
+				}
+				.box1 #box1box2{
+					-moz-box-flex:1;
+					background: blue;
+				}
+				.box2{
+					display: -moz-box;
+					width: 80%;
+				}
+				.box2 #box2box1,#box3{
+					-moz-box-flex:1;
+					background: red;
+				}
+				.box2 #box2box2,#box4{
+					-moz-box-flex:1;
+					background: blue;
+				}
+				</pre>
+			</div>
+			<article>
+				<p>固定宽的box1和占满剩余的box2</p>
+				box1
+				<div class="box1">					
+					<div id="box1box1">box1box1</div>
+					<div id="box1box2">box1box2</div>
+				</div>
+				<hr>
+				<p>各占一半的box2box1和box2box2</p>
+				box2
+				<div class="box2">
+					<div id="box2box1">box2box1</div>
+					<div id="box2box2">box2box2</div>
+				</div>
+				<hr>
+				<p>各占一半的box3和box4，但由于文字长度不匹配，导致变形</p>
+				box2
+				<div class="box2">
+					<div class="box3">box3box3box3box3box3box3box3box3box3</div>
+					<div class="box4">box4box4box4box4box4</div>
+				</div>
+				<p>各占一半的box3和box4，使用有宽度的div</p>
+				box2
+				<div class="box2">
+					<div class="box3"><div class="hasWidth">使用有宽度的div,使用有宽度的div,使用有宽度的div,使用有宽度的div</div></div>
+					<div class="box4"><div class="hasWidth">使用有宽度的div</div></div>
+				</div>
+				<P class="conclude">在使用box-flex时，不要直接放置文字，而应使用有宽度的div</P>
+				<p>结论：各占一半的box3和box4，使用无宽度的div</p>
+				box2
+				<div class="box2">
+					<div class="box3"><div>使用无宽度的div,使用无宽度的div,使用无宽度的div,使用无宽度的div</div></div>
+					<div class="box4"><div>使用无宽度的div</div></div>
+				</div>
+			</article>
+		</section>
+	</section>
+</body>
+</html>

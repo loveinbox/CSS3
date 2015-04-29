@@ -1,0 +1,217 @@
+<link rel="stylesheet" type="text/css" href="../new.css">
+<link rel="stylesheet" type="text/css" href="../basic.css">
+<base href="../examples/display/"/>
+<style type="text/css">
+	.iframe-article{
+		overflow: hidden;
+	}
+	#animate-work-farme{
+		position: relative;
+		width: 80%;
+		height: 250px;
+		margin: 50px auto;
+	}
+	.basic{
+		position: absolute;
+		width: 48px;
+		height: 48px;
+		background: #FF2200;
+		text-align: center;
+		border: 1px solid black;
+		transition: height 1s linear
+	}
+	#top{
+		top:50px;
+		left:250px;
+		-moz-animation:my-top 10s linear infinite;
+	}
+	#bottom{
+		top:150px;
+		left:250px;
+		-moz-animation:my-bottom 10s linear infinite;
+	}
+	#left{
+		top:100px;
+		left:250px;
+	}
+	#right{
+		top:100px;
+		left:150px;
+		-moz-animation:my-right 10s linear infinite;
+		z-index: 100;
+	}
+	#front{
+		top:100px;
+		left:200px;
+		-moz-animation:my-front 10s linear infinite;
+	}
+	#back{
+		top:100px;
+		left:300px;
+		-moz-animation:my-back 10s linear infinite;
+	}
+	@-moz-keyframes my-top{
+		50%{
+			-moz-transform-origin:bottom;
+			-moz-transform:perspective(1000px) rotateX(-90deg);
+		}
+	}
+	@-moz-keyframes my-bottom{
+		50%{
+			-moz-transform-origin:top;
+			-moz-transform:perspective(1000px) rotateX(90deg);
+		}
+	}
+	@-moz-keyframes my-left{
+		50%{
+			-moz-transform-origin:left;
+			-moz-transform:perspective(1000px) rotateY(-90deg);
+		}
+	}
+	@-moz-keyframes my-right{
+		50%{
+			-moz-transform-origin:right;
+			-moz-transform:perspective(1000px) translatex(46px) translatez(50px) rotateY(180deg);
+		}
+	}
+	@-moz-keyframes my-front{
+		50%{
+			-moz-transform-origin:right;
+			-moz-transform:perspective(1000px) rotateY(90deg);
+		}
+	}
+	@-moz-keyframes my-back{
+		50%{
+			-moz-transform-origin:left;
+			-moz-transform:perspective(1000px) rotateY(-90deg);
+		}
+	}
+</style>
+<header><h2>动画作品</h2></header>
+<hr>
+<div class="iframe-article">
+	<div id="animate-work-farme">
+		<div id="top" class="basic">top</div>
+		<div id="bottom" class="basic">bottom</div>
+		<div id="left" class="basic">left</div>
+		<div id="right" class="basic">right</div>
+		<div id="front" class="basic">front</div>
+		<div id="back" class="basic">back</div>
+	</div>
+	<div>
+		<p><a href="http://paulrhayes.com/experiments/cube/index.html" target="_blank">立体三维的作品</a></p>
+		<p><a href="http://ecd.tencent.com/css3/tools.html" target="_blank">动画工具</a></p>	
+	</div>
+</div>
+
+
+<!-- 半成品--带旋转45度--斜视 -->
+<!-- link rel="stylesheet" type="text/css" href="../new.css">
+<link rel="stylesheet" type="text/css" href="../basic.css">
+<base href="../examples/display/"/>
+<style type="text/css">
+	.iframe-article{
+		overflow: hidden;
+	}
+	#animate-work-farme{
+		position: relative;
+		width: 80%;
+		height: 350px;
+		margin: 50px auto;
+	}
+	.basic{
+		position: absolute;
+		width: 48px;
+		height: 48px;
+		background: #FF2200;
+		text-align: center;
+		border: 1px solid black;
+		transition: height 1s linear;
+	}
+	#top{
+		top:50px;
+		left:250px;
+		/*-moz-animation:my-top 10s linear infinite;*/
+	}
+	#bottom{
+		top:150px;
+		left:250px;
+		/*-moz-animation:my-bottom 10s linear infinite;*/
+	}
+	#left{
+		top:100px;
+		left:250px;
+		-moz-animation:my-left 5s linear infinite 2.5s;
+	}
+	#right{
+		top:100px;
+		left:150px;
+		/*-moz-animation:my-right 10s linear infinite;*/
+		z-index: 100;
+	}
+	#front{
+		top:100px;
+		left:1000px;
+		/*-moz-animation:my-front 10s linear infinite;*/
+	}
+	#back{
+		top:100px;
+		left:300px;
+		-moz-animation:my-back 10s linear infinite;
+	}
+	@-moz-keyframes my-top{
+		50%{
+			-moz-transform-origin:bottom;
+			-moz-transform:perspective(1000px) rotateX(-90deg);
+		}
+	}
+	@-moz-keyframes my-bottom{
+		50%{
+			-moz-transform-origin:top;
+			-moz-transform:perspective(1000px) rotateX(90deg);
+		}
+	}
+	@-moz-keyframes my-left{
+		50%{
+			
+		}
+		100%{
+			-moz-transform:perspective(1000px) rotatex(30deg) rotatey(-30deg);
+		}
+	}
+	@-moz-keyframes my-right{
+		50%{
+			-moz-transform-origin:right;
+			-moz-transform:perspective(1000px) translatex(46px) translatez(50px) rotateY(180deg);
+		}
+	}
+	@-moz-keyframes my-front{
+		50%{
+			-moz-transform-origin:right;
+			-moz-transform:perspective(1000px) rotateY(90deg);
+		}
+	}
+	@-moz-keyframes my-back{
+		50%{
+			-moz-transform-origin:left;
+			-moz-transform:perspective(1000px) rotateY(-90deg);
+		}
+		100%{
+			-moz-transform-origin:left;
+			-moz-transform:perspective(1000px) rotateY(-90deg)  rotatex(30deg) rotatey(-30deg);
+		}
+	}
+</style>
+<header><h2>动画作品</h2></header>
+<hr>
+<div class="iframe-article">
+	<div id="animate-work-farme">
+		<div id="top" class="basic">top</div>
+		<div id="bottom" class="basic">bottom</div>
+		<div id="left" class="basic">left</div>
+		<div id="right" class="basic">right</div>
+		<div id="front" class="basic">front</div>
+		<div id="back" class="basic">back</div>
+	</div>
+</div> -->
+
