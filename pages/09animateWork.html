@@ -18,17 +18,21 @@
 		background: #FF2200;
 		text-align: center;
 		border: 1px solid black;
-		transition: height 1s linear
+		transition: height 1s linear;
 	}
 	#top{
 		top:50px;
 		left:250px;
 		-moz-animation:my-top 10s linear infinite;
+		-webkit-animation:my-top 10s linear infinite;
+		animation:my-top 10s linear infinite;
 	}
 	#bottom{
 		top:150px;
 		left:250px;
 		-moz-animation:my-bottom 10s linear infinite;
+		-webkit-animation:my-bottom 10s linear infinite;
+		animation:my-bottom 10s linear infinite;
 	}
 	#left{
 		top:100px;
@@ -38,52 +42,82 @@
 		top:100px;
 		left:150px;
 		-moz-animation:my-right 10s linear infinite;
+		-webkit-animation:my-right 10s linear infinite;
+		animation:my-right 10s linear infinite;
 		z-index: 100;
 	}
 	#front{
 		top:100px;
 		left:200px;
 		-moz-animation:my-front 10s linear infinite;
+		-webkit-animation:my-front 10s linear infinite;
+		animation:my-front 10s linear infinite;
 	}
 	#back{
 		top:100px;
 		left:300px;
 		-moz-animation:my-back 10s linear infinite;
+		-webkit-animation:my-back 10s linear infinite;
+		animation:my-back 10s linear infinite;
 	}
-	@-moz-keyframes my-top{
+	@keyframes my-top{
 		50%{
 			-moz-transform-origin:bottom;
+			-webkit-transform-origin:bottom;
+			transform-origin:bottom;
 			-moz-transform:perspective(1000px) rotateX(-90deg);
+			-webkit-transform:perspective(1000px) rotateX(-90deg);
+			transform:perspective(1000px) rotateX(-90deg);
 		}
 	}
-	@-moz-keyframes my-bottom{
+	@keyframes my-bottom{
 		50%{
 			-moz-transform-origin:top;
+			-webkit-transform-origin:top;
+			transform-origin:top;
 			-moz-transform:perspective(1000px) rotateX(90deg);
+			-webkit-transform:perspective(1000px) rotateX(90deg);
+			transform:perspective(1000px) rotateX(90deg);
 		}
 	}
-	@-moz-keyframes my-left{
+	@keyframes my-left{
 		50%{
 			-moz-transform-origin:left;
+			-webkit-transform-origin:left;
+			transform-origin:left;
 			-moz-transform:perspective(1000px) rotateY(-90deg);
+			-webkit-transform:perspective(1000px) rotateY(-90deg);
+			transform:perspective(1000px) rotateY(-90deg);
 		}
 	}
-	@-moz-keyframes my-right{
+	@keyframes my-right{
 		50%{
 			-moz-transform-origin:right;
+			-webkit-transform-origin:right;
+			transform-origin:right;
 			-moz-transform:perspective(1000px) translatex(46px) translatez(50px) rotateY(180deg);
+			-webkit-transform:perspective(1000px) translatex(46px) translatez(50px) rotateY(180deg);
+			transform:perspective(1000px) translatex(46px) translatez(50px) rotateY(180deg);
 		}
 	}
-	@-moz-keyframes my-front{
+	@keyframes my-front{
 		50%{
 			-moz-transform-origin:right;
+			-webkit-transform-origin:right;
+			transform-origin:right;
 			-moz-transform:perspective(1000px) rotateY(90deg);
+			-webkit-transform:perspective(1000px) rotateY(90deg);
+			transform:perspective(1000px) rotateY(90deg);
 		}
 	}
-	@-moz-keyframes my-back{
+	@keyframes my-back{
 		50%{
 			-moz-transform-origin:left;
+			-webkit-transform-origin:left;
+			transform-origin:left;
 			-moz-transform:perspective(1000px) rotateY(-90deg);
+			-webkit-transform:perspective(1000px) rotateY(-90deg);
+			transform:perspective(1000px) rotateY(-90deg);
 		}
 	}
 </style>

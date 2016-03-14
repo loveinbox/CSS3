@@ -11,6 +11,8 @@
 			margin: 30px;
 			background: url(../../imgs/4.png) no-repeat;
 			-moz-perspective: 1200px;
+			-webkit-perspective: 1200px;
+			perspective: 1200px;
 		}
 	</style>
 </head>
@@ -18,16 +20,28 @@
 	<section id="wrap">
 		<section>
 			<div class="aside">
-				<p class="show-code">-moz-transform:perspective(100px) rotateX(45deg);</p>
-				<p class="show-code">-moz-transform:perspective(100px) rotateY(45deg);</p>
-				<p class="show-code">-moz-transform:perspective(100px) rotateZ(45deg);</p>
+				<p class="show-code">transform:perspective(100px) rotateX(45deg);</p>
+				<p class="show-code">transform:perspective(100px) rotateY(45deg);</p>
+				<p class="show-code">transform:perspective(100px) rotateZ(45deg);</p>
 				<img src="../../imgs/xyz.png">
 			</div>
 			<article>
 				<div class="basic" style="background: url(../../imgs/4.png) no-repeat;"></div>
-				<div class="basic" style="float:left;-moz-transform:perspective(100px) rotateX(45deg);">X</div>
-				<div class="basic" style="float:left;-moz-transform:perspective(100px) rotateY(45deg);">Y</div>
-				<div class="basic" style="float:left;-moz-transform:perspective(100px) rotateZ(45deg);">Z</div>
+				<div class="basic" style="float:left;
+				-moz-transform:perspective(100px) rotateX(45deg);
+				-webkit-transform:perspective(100px) rotateX(45deg);
+				transform:perspective(100px) rotateX(45deg);
+				">X</div>
+				<div class="basic" style="float:left;
+				-moz-transform:perspective(100px) rotateY(45deg);
+				-webkit-transform:perspective(100px) rotateY(45deg);
+				transform:perspective(100px) rotateY(45deg);
+				">Y</div>
+				<div class="basic" style="float:left;
+				-moz-transform:perspective(100px) rotateZ(45deg);
+				-webkit-transform:perspective(100px) rotateZ(45deg);
+				transform:perspective(100px) rotateZ(45deg);
+				">Z</div>
 				<div class="basic" style="float:left;-moz-transform:rotate3d(2,2,2,45deg);">Z</div>
 				<p class="conclude">perspective属性设置镜头到元素平面的距离。所有元素都是放置在z=0的平面上。比如perspective(300px)表示，镜头距离元素表面的位置是300像素。</p>
 				<p class="conclude">设置之后，就可以有近大远小的效果。</p>
@@ -35,20 +49,25 @@
 		</section>
 		<section>
 			<div class="aside">
-				<p class="show-code">-moz-transform:scale3d(0.5,2,3);</p>
+				<p class="show-code">transform:scale3d(0.5,2,3);</p>
 			</div>
 			<article>
 				<div class="basic" style="background: url(../../imgs/4.png) no-repeat;"></div>
-				<div class="basic" style="float:left;-moz-transform:scale3d(0.5,2,3);"></div>
+				<div class="basic" style="float:left;
+				-moz-transform:scale3d(0.5,2,3);
+				-webkit-transform:scale3d(0.5,2,3);
+				transform:scale3d(0.5,2,3);"></div>
 			</article>
 		</section>
 		<section>
 			<div class="aside">
-				<p class="show-code">-moz-transform:translate3d(50px,150px,250px);</p>
+				<p class="show-code">transform:translate3d(50px,150px,250px);</p>
 			</div>
 			<article>
 				<div class="basic" style="background: url(../../imgs/4.png) no-repeat;"></div>
-				<div class="basic" style="-moz-transform:translate3d(50px,20px,250px);"></div>
+				<div class="basic" style="-moz-transform:translate3d(50px,20px,250px);
+				-webkit-transform:translate3d(50px,20px,250px);
+				transform:translate3d(50px,20px,250px);"></div>
 			</article>
 		</section>
 	</section>

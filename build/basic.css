@@ -12,6 +12,6 @@ body,ul,img{
 	padding: 0;
 	border: 0;
 }
-a,a:link,a:active,a:visited{
-    color: #000;
+a{
+	text-decoration: none;
 }

@@ -17,12 +17,19 @@
 	<section id="wrap">
 		<section>
 			<div class="aside">
-				<p class="show-code">div.rotate:hover{
+				<p class="show-code">
+					div.rotate:hover{
 						-moz-transform:rotate(45deg);
+						-webkit-transform:rotate(45deg);
+						transform:rotate(45deg);
 					}
 					div.rotate+div:hover{
 						-moz-transform:rotate(45deg);
+						-webkit-transform:rotate(45deg);
+						transform:rotate(45deg);
 						-moz-transform-origin:100% 100%;
+						-webkit-transform-origin:100% 100%;
+						transform-origin:100% 100%;
 					}
 				</p>
 			</div>
@@ -30,10 +37,16 @@
 				<style type="text/css">
 					div.rotate:hover{
 						-moz-transform:rotate(45deg);
+						-webkit-transform:rotate(45deg);
+						transform:rotate(45deg);
 					}
 					div.rotate+div:hover{
 						-moz-transform:rotate(45deg);
+						-webkit-transform:rotate(45deg);
+						transform:rotate(45deg);
 						-moz-transform-origin:100% 100%;
+						-webkit-transform-origin:100% 100%;
+						transform-origin:100% 100%;
 					}
 				</style>
 				<div class="basic rotate">鼠标悬浮，以中心点转动</div>
@@ -42,16 +55,25 @@
 		</section>
 		<section>
 			<div class="aside">
-				<p class="show-code">-moz-transform:scale(0.5);
+				<p class="show-code">
+				-moz-transform:scale(0.5);
+				-webkit-transform:scale(0.5);
+				transform:scale(0.5);
 				-moz-transform:scale(0.5,2);</p>
+				-webkit-transform:scale(0.5,2);</p>
+				transform:scale(0.5,2);</p>
 			</div>
 			<article>
 				<style type="text/css">
 					div.transform:hover{
 						-moz-transform:scale(0.5);
+						-webkit-transform:scale(0.5);
+						transform:scale(0.5);
 					}
 					div.transform+div:hover{
 						-moz-transform:scale(0.5,2);
+						-webkit-transform:scale(0.5,2);
+						transform:scale(0.5,2);
 					}
 				</style>
 				<div class="basic transform" style="float:left;">鼠标悬浮，缩小为一半</div>
@@ -62,10 +84,16 @@
 			<style type="text/css">
 				div.skew:hover{
 					-moz-transform:skew(30deg,30deg);
+					-webkit-transform:skew(30deg,30deg);
+					transform:skew(30deg,30deg);
 				}
 			</style>
 			<div class="aside">
-				<p class="show-code">-moz-transform:skew(30deg,30deg);</p>
+				<p class="show-code">
+					-moz-transform:skew(30deg,30deg);
+					-webkit-transform:skew(30deg,30deg);
+					transform:skew(30deg,30deg);
+				</p>
 			</div>
 			<article>
 				<div class="basic skew">鼠标悬浮，横纵变形各30度</div>
@@ -75,10 +103,16 @@
 			<style type="text/css">
 				div.translate:hover{
 					-moz-transform:translate(50px);
+					-webkit-transform:translate(50px);
+					transform:translate(50px);
 				}
 			</style>
 			<div class="aside">
-				<p class="show-code">-moz-transform:translate(50px);</p>
+				<p class="show-code">
+					-moz-transform:translate(50px);
+					-webkit-transform:translate(50px);
+					transform:translate(50px);
+				</p>
 			</div>
 			<article>
 				<div class="basic translate">鼠标悬浮，向右移动50px</div>
