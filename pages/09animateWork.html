@@ -90,16 +90,38 @@
 			transform:perspective(1000px) rotateY(-90deg);
 		}
 	}
-	@keyframes my-right{
-		50%{
-			-moz-transform-origin:right;
-			-webkit-transform-origin:right;
-			transform-origin:right;
-			-moz-transform:perspective(1000px) translatex(46px) translatez(50px) rotateY(180deg);
-			-webkit-transform:perspective(1000px) translatex(46px) translatez(50px) rotateY(180deg);
-			transform:perspective(1000px) translatex(46px) translatez(50px) rotateY(180deg);
-		}
-	}
+	@-webkit-keyframes my-right{
+            50%{
+                -moz-transform-origin:right;
+                -webkit-transform-origin:right;
+                transform-origin:right;
+                -moz-transform:perspective(1000px) translateX(46px) translateZ(50px) rotateY(180deg);
+                -webkit-transform:perspective(1000px) translateX(46px) translateZ(50px) rotateY(180deg);
+                transform:perspective(1000px) translateX(46px) translateZ(50px) rotateY(180deg);
+            }
+            100%{
+                -webkit-transform-origin:right;
+                transform-origin:right;
+                -webkit-transform:perspective(0) translateX(0) translateZ(0) rotateY(0);
+                transform:perspective(0) translateX(0) translateZ(0) rotateY(0);
+            }
+        }
+    @keyframes my-right{
+        50%{
+            -moz-transform-origin:right;
+            -webkit-transform-origin:right;
+            transform-origin:right;
+            -moz-transform:perspective(1000px) translateX(46px) translateZ(50px) rotateY(180deg);
+            -webkit-transform:perspective(1000px) translateX(46px) translateZ(50px) rotateY(180deg);
+            transform:perspective(1000px) translateX(46px) translateZ(50px) rotateY(180deg);
+        }
+        100%{
+            -webkit-transform-origin:right;
+            transform-origin:right;
+            -webkit-transform:perspective(0) translateX(0) translateZ(0) rotateY(0);
+            transform:perspective(0) translateX(0) translateZ(0) rotateY(0);
+        }
+    }
 	@keyframes my-front{
 		50%{
 			-moz-transform-origin:right;
